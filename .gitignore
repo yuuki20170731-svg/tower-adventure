@@ -1,0 +1,26 @@
+# Local environments and editor settings
+.venv/
+__pycache__/
+*.py[cod]
+.cursor/
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+
+# Personal saves and generated logs
+save.json
+*.log
+*.bak
+*.tmp
+
+# Generated Unity reports, captures and local training results
+UnityRPG/Checks/
+UnityRPG/VisualChecks/
+UnityRPG/DepthVisual/
+UnityRPG/Playthrough100/
+UnityRPG/RefinementFinal/
+UnityRPG/RefinementPlaythrough/
+UnityRPG/RefinementVisual/
+models/

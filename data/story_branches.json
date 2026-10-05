@@ -1,0 +1,139 @@
+{
+  "story_paths": [
+    {
+      "id": "start",
+      "text": "ここは滅びかけた世界。星は霞み、地は裂け、人はまだ歩いている。君の靴底に砂が溜まる音だけが、妙にはっきり聞こえる。",
+      "choices": [
+        {"text": "冒険を始める", "next": "adventure_start"}
+      ]
+    },
+    {
+      "id": "adventure_start",
+      "text": "君が最後の希望、なんて大袈裟な言葉は嫌いだろう。でもな——扉の向こうで、誰かが息を止めて待っている。戦う準備はできているか？",
+      "choices": [
+        {"text": "準備万端だ！", "next": "brave_choice", "effect": "stat_type=attack|bravery+2|honor+1"},
+        {"text": "慎重に進もう", "next": "careful_choice", "effect": "stat_type=defense|cunning+2|bravery-1"},
+        {"text": "魔法を極めたい", "next": "magic_choice", "effect": "stat_type=magic|compassion+1|cunning+1"}
+      ]
+    },
+    {
+      "id": "brave_choice",
+      "text": "その勇敢さが、お前の力となるだろう。攻撃型のボーナスを得た！",
+      "choices": [{"text": "進む", "next": "ready_for_adventure"}]
+    },
+    {
+      "id": "careful_choice",
+      "text": "慎重さは時に最強の武器。防御型のボーナスを得た！",
+      "choices": [{"text": "進む", "next": "ready_for_adventure"}]
+    },
+    {
+      "id": "magic_choice",
+      "text": "魔法の力は無限の可能性を秘めている。魔法型のボーナスを得た！",
+      "choices": [{"text": "進む", "next": "ready_for_adventure"}]
+    },
+    {
+      "id": "ready_for_adventure",
+      "text": "魔王を倒せ、とは言わない。ただ、君の歩幅で深淵を測ってこい。地図は嘘をつかないが、道は嘘をつく。",
+      "choices": [{"text": "心の声を聞く", "next": "soul_vote"}]
+    },
+    {
+      "id": "soul_vote",
+      "text": "神の声ではない。誰かのための声だ。…さあ、君は何を信じる？",
+      "choices": [
+        {"text": "弱きを助け、強きを挫く", "next": null, "effect": "morality+3|compassion+3|honor+2"},
+        {"text": "勝てば正義。手段は選ばない", "next": null, "effect": "greed+2|cunning+2|honor-2|bravery+1"},
+        {"text": "誰も傷つけたくない。でも逃げもしない", "next": null, "effect": "compassion+2|bravery+2|morality+1|greed-1"}
+      ]
+    },
+    {
+      "id": "post_boss_10",
+      "text": "十階の主が膝をついた。床に広がる影は、思ったより軽かった。遠くで鐘が一つ鳴る——誰かが、まだ生きている合図だ。君は手の甲に付いた血を拭う。拭っても、匂いは残る。それが初めての「勝ち」の重さかもしれない。",
+      "choices": [
+        {"text": "仲間の肩を叩く", "next": null, "effect": "compassion+2|honor+1"},
+        {"text": "黙って先を見る", "next": null, "effect": "bravery+1|cunning+1"},
+        {"text": "「まだ足りない」と呟く", "next": null, "effect": "greed+1|bravery+2|compassion-1"}
+      ]
+    },
+    {
+      "id": "post_boss_20",
+      "text": "二十階。壁の苔が濃くなり、空気が舌に苦い。倒した守り手の兜の隙から、古い紙片が落ちた。住所のない手紙——「帰れ」とだけ書いてある。筆跡は子供のものだ。笑えば笑うほど胸が痛い、そんな種類の悪戯だ。",
+      "choices": [
+        {"text": "紙片を折り畳んで懐に入れる", "next": null, "effect": "compassion+3|morality+1"},
+        {"text": "踏みつけて進む", "next": null, "effect": "bravery+2|honor-1"},
+        {"text": "冗談で誤魔化す", "next": null, "effect": "cunning+2|compassion+1"}
+      ]
+    },
+    {
+      "id": "post_boss_30",
+      "text": "三十階。ここから先は「人の形をしたもの」が減る。君はそれでも仲間の体温を確かめる癖がついた。守り手が最後に言った。「私も、昔は旅した」。言い訳みたいな告白。それでも胸の奥で小さな波が立った。",
+      "choices": [
+        {"text": "名前を聞き損ねたことを悔やむ", "next": null, "effect": "compassion+4|honor+2|story_flag=ending_echo_love"},
+        {"text": "礼だけ言って立ち去る", "next": null, "effect": "honor+3|cunning+1"},
+        {"text": "感情は邪魔だと割り切る", "next": null, "effect": "greed+2|morality-1"}
+      ]
+    },
+    {
+      "id": "post_boss_40",
+      "text": "四十階。風が途切れ、音だけが遅れて届く。勝利のあとに来る静けさは、敗北に似ている。仲間の一人が咳をした。小さな音が、妙に偉そうだ。君は水筒を渡す。誰も感謝の言葉を言わない。言わなくていい距離になってきた。",
+      "choices": [
+        {"text": "「休もう」と言う", "next": null, "effect": "compassion+2|bravery-1"},
+        {"text": "黙って歩幅を合わせる", "next": null, "effect": "honor+2|cunning+1"},
+        {"text": "冗談で空気を壊す", "next": null, "effect": "bravery+2|compassion+1"}
+      ]
+    },
+    {
+      "id": "post_boss_50",
+      "text": "五十階。半ばを越えた。数字は冷たいが、肌には熱が残る。君は自分の影が二つある気がした。一つは剣を持ち、一つは何も持たない。どちらが本物かは、まだ早い。深淵は鏡のように笑う。",
+      "choices": [
+        {"text": "影に向かって話しかける", "next": null, "effect": "bravery+3|cunning+2"},
+        {"text": "目を逸らす", "next": null, "effect": "morality+2|compassion+1"},
+        {"text": "仲間に聞く「お前はどっちを見てる」", "next": null, "effect": "honor+2|compassion+2"}
+      ]
+    },
+    {
+      "id": "post_boss_60",
+      "text": "六十階。石の目が並ぶ回廊。守り手は言った。「戻るなら今だ」。脅しではなく、忠告だった。君の中にも小さな「戻りたい」がいる。それを殺す必要はない。抱えて歩けばいい。",
+      "choices": [
+        {"text": "「戻らない」と答える", "next": null, "effect": "bravery+3|honor+2"},
+        {"text": "沈黙する", "next": null, "effect": "cunning+2|morality+1"},
+        {"text": "「怖い」と認める", "next": null, "effect": "compassion+3|bravery+1"}
+      ]
+    },
+    {
+      "id": "post_boss_70",
+      "text": "七十階。空が近い。星が近すぎて、唾を吐けば星座が歪む気がする。勝利の祝杯はない。あるのは、細い希望だけ。君はそれで十分だと思えた瞬間があった。今も、少しだけ。",
+      "choices": [
+        {"text": "星を数える", "next": null, "effect": "compassion+2|cunning+1"},
+        {"text": "地を見る", "next": null, "effect": "morality+2|honor+1"},
+        {"text": "仲間の横顔を見る", "next": null, "effect": "honor+2|compassion+2"}
+      ]
+    },
+    {
+      "id": "post_boss_80",
+      "text": "八十階。呼吸が刃になる。言葉は貴重品になった。それでも誰かが小声で歌った。走調の子守歌。滑稽で、尊い。君は笑った。笑ったら涙が一つ落ちた。誰も指摘しない。それが、この階の礼儀だ。",
+      "choices": [
+        {"text": "一緒に口ずさむ", "next": null, "effect": "compassion+3|bravery+1"},
+        {"text": "聞き耳だけ立てる", "next": null, "effect": "honor+2|cunning+1"},
+        {"text": "先を急ぐ", "next": null, "effect": "greed+1|bravery+2"}
+      ]
+    },
+    {
+      "id": "post_boss_90",
+      "text": "九十階。終わりが形を持ち始める。扉の向こうの静寂が、重すぎて耳鳴りがする。仲間が言う。「お前が決めろ」。残酷な信頼だ。君は笑って頷いた。返事は剣でするしかない。",
+      "choices": [
+        {"text": "「一緒に帰る」と言う", "next": null, "effect": "honor+3|compassion+2"},
+        {"text": "「ついてこい」と言う", "next": null, "effect": "bravery+3|honor+1"},
+        {"text": "何も言わない", "next": null, "effect": "cunning+2|morality+1"}
+      ]
+    },
+    {
+      "id": "post_boss_100",
+      "text": "深淵王アビスが崩れる。世界の底から、透明な風が吹き上がる。それは祝福でも呪いでもない——ただ、選択の匂いだ。王は最後に言う。「お前が拾った優しさで世界を縫え」。途方もない注文だ。それでも君の手は、まだ温かい。",
+      "choices": [
+        {"text": "自分の命を秤に乗せ、世界を押し戻す", "effect": "compassion+5|honor+4|morality+3|story_flag=ending_abyss_sacrifice", "next": "__ENDING__"},
+        {"text": "神様も魔王もだまして、大笑いして締める", "effect": "cunning+5|bravery+3|greed+1|story_flag=ending_abyss_jester", "next": "__ENDING__"},
+        {"text": "何も約束しない。ただ、歩き出す", "effect": "morality+2|bravery+2|cunning+2|story_flag=ending_abyss_void", "next": "__ENDING__"}
+      ]
+    }
+  ]
+}

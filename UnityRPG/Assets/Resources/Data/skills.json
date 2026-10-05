@@ -1,0 +1,58 @@
+{
+  "entries": [
+    {
+      "cost": 10,
+      "power": 25,
+      "unlock": 1,
+      "poison_chance": 0.08,
+      "desc": "単体に炎ダメージ。低コストで毒がわずかに付く。",
+      "name": "ファイア"
+    },
+    {
+      "cost": 20,
+      "power": 50,
+      "unlock": 3,
+      "poison_chance": 0.12,
+      "desc": "ファイアの上位版。火力が高く毒付与も少し伸びる。",
+      "name": "フレイム"
+    },
+    {
+      "cost": 8,
+      "heal": 30,
+      "unlock": 1,
+      "desc": "自分のHPを回復する。",
+      "name": "ヒール"
+    },
+    {
+      "cost": 20,
+      "heal": 80,
+      "unlock": 4,
+      "desc": "大きく自分のHPを回復する。",
+      "name": "メガヒール"
+    },
+    {
+      "cost": 24,
+      "power": 55,
+      "unlock": 8,
+      "paralyze_chance": 0.15,
+      "desc": "雷ダメージと麻痺の可能性。ボス戦の足止めに。",
+      "name": "サンダーボルト"
+    },
+    {
+      "cost": 14,
+      "power": 18,
+      "unlock": 5,
+      "poison_chance": 0.42,
+      "desc": "威力は控えめだが毒が付きやすい。",
+      "name": "ポイズンストーム"
+    },
+    {
+      "cost": 16,
+      "power": 24,
+      "unlock": 6,
+      "paralyze_chance": 0.32,
+      "desc": "中コストで雷と麻痺狙い。長期戦向き。",
+      "name": "雷脈"
+    }
+  ]
+}

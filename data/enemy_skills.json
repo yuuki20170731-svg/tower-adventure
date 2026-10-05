@@ -1,0 +1,21 @@
+{
+  "enemy_skills": {
+    "none": {"name": "通常攻撃", "type": "physical", "power": 1.0},
+    "powerattack": {"name": "パワーアタック", "type": "physical", "power": 1.5, "cost": 10, "accuracy": 0.9},
+    "doublehit": {"name": "ダブルヒット", "type": "physical", "hits": 2, "power": 0.8},
+    "bonecurse": {"name": "骨の呪い", "type": "magic", "power": 1.2, "special": "poison"},
+    "sonic": {"name": "ソニックウェーブ", "type": "magic", "power": 1.1, "special": "stun"},
+    "firebreath": {"name": "火炎放射", "type": "magic", "power": 2.0, "special": "burn"},
+    "poison": {"name": "毒霧", "type": "magic", "power": 0.8, "special": "poison"},
+    "shield": {"name": "シールド", "type": "defense", "power": 1.5},
+    "frostbolt": {"name": "フロストボルト", "type": "magic", "power": 1.1, "special": "freeze"},
+    "disguise": {"name": "変身", "type": "special", "effect": "dodge_next"}
+  },
+  "special_effects": {
+    "poison": {"name": "毒", "damage_per_turn": 5, "duration": 3},
+    "burn": {"name": "火傷", "damage_per_turn": 8, "duration": 3},
+    "freeze": {"name": "凍結", "skip_turn": true, "duration": 1},
+    "stun": {"name": "麻痺", "skip_turn": true, "duration": 1},
+    "dodge_next": {"name": "次の攻撃回避", "dodge_chance": 1.0, "duration": 1}
+  }
+}

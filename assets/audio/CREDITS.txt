@@ -1,0 +1,54 @@
+このフォルダの音源のクレジット・ライセンス（再配布・商用前に各元ページで最新版を確認してください）
+
+1) title.ogg — 「S31-Let the Games Begin.ogg」
+   OpenGameArt: https://opengameart.org/content/let-the-games-begin-0
+   作者ページの表記に従ってください（作者は任意クレジット）。
+
+2) battle.ogg — 「fight.ogg」（Fast fight / battle music）
+   OpenGameArt: https://opengameart.org/content/fast-fight-battle-music
+   作者: Ville Nousiainen / Xythe / mutkanto — 任意でクレジット・リンク推奨
+   http://soundcloud.com/mutkanto
+
+2b) battle_epic.ogg — 通常戦闘で最優先（「かっこいい」メイン戦闘BGM用スロット）
+   未配置時は battle_encounter.ogg → battle.ogg の順にフォールバック。
+   fetch スクリプトでは CleytonRX の戦闘曲をこの名前で取得します（下記と同一音源でも可）。
+
+2c) battle_encounter.ogg — 第2候補（速い戦闘曲など差し替え可）
+   デフォルト取得: fight.ogg と同じ URL の場合あり（battle.ogg と同内容でよい）。
+
+2d) world_adventure.ogg — 「RPG_Exploration_The_Lost_City_.ogg」
+   OpenGameArt: https://opengameart.org/content/rpg-exploration-the-lost-city
+   作者 Hitctrl の表記に従うこと。
+
+3) victory.ogg — 「victory_or_wedding_music_with_bells_c64_style」
+   OpenGameArt: https://opengameart.org/content/victory-or-wedding-music-with-bells-c64-style
+   元ページのライセンス表記を確認してください。
+
+4) ui_click.wav — UI Sound effects pack（MENU A_Select.wav）
+   OpenGameArt: https://opengameart.org/content/ui-sound-effects-pack
+   必須クレジット（パック作者の指示）:
+   "Some of the sounds in this project were created by David McKee (ViRiX) soundcloud.com/virix"
+
+---
+Kenney CC0 など別素材に差し替える場合は、このファイルを更新してください。
+
+---
+フィールド・ボス用（任意・ファイルが無いときは無音／戦闘は battle_epic → battle_encounter → battle の順でフォールバック）
+
+このゲームは `assets/audio/` に次の名前で置くと自動再生されます（すべて任意）。
+ライセンスは各リンク先の最新表記を確認してください。
+
+A) フィールド（冒険テーマを優先・上から順に存在するファイルを再生）
+   world_adventure.ogg / map_adventure.ogg / field_journey.ogg / world_explore.ogg
+   … いずれも「マップ＝冒険」用。どれも無い場合のみ tier 別:
+   world_00.ogg … world_09.ogg（コードでは tier 0〜9 に対応）
+   OpenGameArt で「loop」「calm」「forest」「ocean」「desert」「cave」などで検索し、
+   自分が許諾に同意できるループ曲を選び、ファイル名だけ上記にリネームしてください。
+   例:「Peaceful Fantasy RPG Town」「Ocean ambience」「Desert wind」系の素材など。
+
+B) ボス戦（ボス戦闘開始後、`battle.ogg` の代わりに試す）
+   boss_chamber.ogg
+   候補の一例（利用時は作者・ライセンスに従うこと）:
+   - Boss Battle Theme (CleytonKauffman) — https://opengameart.org/content/boss-battle-theme
+   他: https://opengameart.org/art-search-advanced?keys=boss&field_art_type_tid%5B%5D=13
+   入手した OGG を `boss_chamber.ogg` にリネームして配置。

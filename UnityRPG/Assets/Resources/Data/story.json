@@ -1,0 +1,6584 @@
+{
+  "story_paths": [
+    {
+      "id": "start",
+      "choices": [
+        {
+          "text": "欠片を握り、塔へ向かう",
+          "next": "adventure_start",
+          "effect": ""
+        }
+      ],
+      "text": "昨夜、空から星がひとつ消えた。今朝、村から母の名前が消えた。誰に尋ねても、君の母を覚えていない。胸に残った青い欠片だけが温かい。忘れられた人々の声を探し、君は星の塔の麓へ来た。",
+      "speaker": "語り手",
+      "chapter": "序章 星の消えた夜",
+      "portrait": "player"
+    },
+    {
+      "id": "adventure_start",
+      "choices": [
+        {
+          "text": "先頭に立って、皆を守りたい",
+          "next": "brave_choice",
+          "effect": "stat_type=attack|bravery+2|honor+1"
+        },
+        {
+          "text": "相談しながら、慎重に進みたい",
+          "next": "careful_choice",
+          "effect": "stat_type=defense|cunning+2|bravery-1"
+        },
+        {
+          "text": "塔の仕組みを、魔法で解き明かしたい",
+          "next": "magic_choice",
+          "effect": "stat_type=magic|compassion+1|cunning+1"
+        }
+      ],
+      "text": "「塔は、なくしたものを返すこともある。だが、ひとりで登るな」ハルの後ろに、傷のある盾を持つ戦士、手帳を抱えた僧侶、葉を髪に挿した弓使い、眼鏡の魔法使いが立っていた。「君は、どうやって進みたい？」",
+      "speaker": "ハル（旅人）",
+      "chapter": "序章 星の消えた夜",
+      "portrait": "guide"
+    },
+    {
+      "id": "brave_choice",
+      "choices": [
+        {
+          "text": "背中は任せる、と答える",
+          "next": "ready_for_adventure",
+          "effect": ""
+        }
+      ],
+      "text": "「頼もしいな。でも、先頭で倒れたら守れない。危なくなったら俺の盾の後ろに来い」ガルドは笑った。「俺はガルド。取り戻したい名前がある。お前となら、先へ進めそうだ」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "序章 五人の旅立ち",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "careful_choice",
+      "choices": [
+        {
+          "text": "道を一緒に探そう、と答える",
+          "next": "ready_for_adventure",
+          "effect": ""
+        }
+      ],
+      "text": "「いいね。焦って飛び込む人の袖を引くの、疲れるから」リナは弓を背負う。「私はリナ。森の行方を探してる。慎重なのと臆病なのは違うよ。道は、私が見つける」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "序章 五人の旅立ち",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "magic_choice",
+      "choices": [
+        {
+          "text": "分からないことから始めよう、と答える",
+          "next": "ready_for_adventure",
+          "effect": ""
+        }
+      ],
+      "text": "「僕も仕組みを知りたい。学院では、塔の研究記録が急に消されたんだ」テオは眼鏡を直した。「僕はテオ。知らないことは、知らないと言うよ。その代わり、一緒に考えてほしい」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "序章 五人の旅立ち",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "ready_for_adventure",
+      "choices": [
+        {
+          "text": "四人の名前を、声に出して呼ぶ",
+          "next": "soul_vote",
+          "effect": ""
+        }
+      ],
+      "text": "「私はミナ。妹を探しているの。生きてるのかも、まだ分からないけれど」ミナは手帳に五人の名前を書いた。「塔では、忘れることがあるんだって。だから、まず皆の名前を覚えよう」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "序章 五人の旅立ち",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "soul_vote",
+      "choices": [
+        {
+          "text": "忘れられた人を、ひとりずつ助けたい",
+          "next": null,
+          "effect": "morality+3|compassion+3|honor+2"
+        },
+        {
+          "text": "何としても、母の名前を取り戻したい",
+          "next": null,
+          "effect": "greed+2|cunning+2|bravery+1"
+        },
+        {
+          "text": "誰も置いていかず、五人で帰りたい",
+          "next": null,
+          "effect": "compassion+2|bravery+2|morality+1|greed-1"
+        }
+      ],
+      "text": "ガルドは盾を上げ、リナは先の道を指す。ミナが君の袖を直し、テオは欠片の光を記録した。君が何を信じるかは、これからの選択に残っていく。最初の一歩を、どんな気持ちで踏み出す？",
+      "speaker": "仲間たち",
+      "chapter": "序章 五人の旅立ち",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_10",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_10",
+          "effect": ""
+        }
+      ],
+      "text": "十階の守護者が崩れると、鎧の中から小さな名札が落ちた。ガルドはそれを拾い、指を止める。「俺が守れなかった村の子だ。なぜ、こんな所に……」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "reveal_10",
+      "choices": [
+        {
+          "text": "仲間の気持ちを聞き、一緒に進む",
+          "next": null,
+          "effect": "compassion+2|honor+1"
+        },
+        {
+          "text": "分かったことを記録し、次の道を考える",
+          "next": null,
+          "effect": "cunning+2|morality+1"
+        },
+        {
+          "text": "必ず帰ると約束して、次へ進む",
+          "next": null,
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "名札に触れると、消えた村の鐘が聞こえた。テオが壁の文字を読む。「塔は死者を呼んでいるんじゃない。地上から奪った記憶を、ここに閉じ込めている」",
+      "speaker": "仲間たち",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_1",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_1_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_1_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_1_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「俺は元・王都の衛兵だ。盾の傷？ 村の門を守った時についた。……守り切った、とは言ってない」ガルドは笑おうとして、盾の縁を握り直した。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_1_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_1_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_1_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_2",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_2_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_2_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_2_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「あなたの名前を、もう一度教えてくれる？」ミナは手帳を開く。「最近、昨日助けた人の名前が思い出せなくなるの。忘れないように書いておきたいんだ」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_2_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_2_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_2_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_3",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_3_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_3_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_3_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「足跡が消えてる。風もないのに」リナは冗談をやめ、床に葉を置く。「森で道を見失うより嫌な感じ。私たちが通ったことまで、消そうとしてる」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_3_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_3_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_3_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_4",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_4_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_4_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_4_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「この光は星明かりじゃない。記憶が燃える時の色だ」テオは眼鏡を直す。「断言はできないけど……君の胸の欠片も、同じ色をしてる」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_4_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_4_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_4_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_5",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_5_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_5_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_5_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "5階。鐘の音と消える足跡を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_5_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_5_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_5_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_6",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_6_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_6_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_6_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "6階。鐘の音と消える足跡を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_6_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_6_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_6_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_7",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_7_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_7_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_7_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "7階。鐘の音と消える足跡を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_7_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_7_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_7_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_8",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_8_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_8_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_8_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "8階。鐘の音と消える足跡を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_8_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_8_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_8_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第1章 消えた名前",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_9",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_9_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_9_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_9_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "リナ「私が先頭。ガルド、足音を小さく」\nガルド「この鎧でか？ 無茶を言うな」\nミナ「でも、聞こえると安心するよ」\nテオ「迷子になったら、その足音を目印にしよう」",
+      "speaker": "仲間たち",
+      "chapter": "第1章 消えた名前",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_9_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第1章 消えた名前",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_10",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_10_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_10_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_10_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。鐘の音と消える足跡のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第1章 消えた名前",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_10_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第1章 消えた名前",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_20",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_20",
+          "effect": ""
+        }
+      ],
+      "text": "二十階の守護者から、宛先のない手紙が落ちた。『お姉ちゃん、帰ってきて』。ミナの指が震える。「妹の字だ。でも、この手紙を受け取った覚えはない」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "reveal_20",
+      "choices": [
+        {
+          "text": "仲間の気持ちを聞き、一緒に進む",
+          "next": null,
+          "effect": "compassion+2|honor+1"
+        },
+        {
+          "text": "分かったことを記録し、次の道を考える",
+          "next": null,
+          "effect": "cunning+2|morality+1"
+        },
+        {
+          "text": "必ず帰ると約束して、次へ進む",
+          "next": null,
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "手紙の裏には、塔へ送られた人の名簿があった。妹の名は、その中にある。「死んだと聞かされたの。誰が、私にそう言ったのかな」ミナは手紙をしまう。「今度は、自分で確かめる」",
+      "speaker": "仲間たち",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_11",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_11_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_11_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_11_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「王都の知らせを信じた。家族は避難した、と。確認もせずにな」ガルドは落ちた封筒を拾う。「紙に書いてあれば正しいなんて、俺は何を守っていたんだろう」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_11_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_11_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_11_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_12",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_12_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_12_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_12_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「妹は手紙の最後に、いつも花を描くの」ミナは指で空中に小さな花を描いた。「名前を忘れても、この描き方は忘れない。だから、まだ探せる」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_12_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_12_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_12_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_13",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_13_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_13_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_13_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「手紙って、遠くの人に届く小さな矢みたいだね」リナは封筒を乾かす。「私の矢は外さない。この手紙も、最後まで届けたい」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_13_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_13_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_13_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_14",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_14_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_14_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_14_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「名簿の人数と、星灯りの数が合う」テオは言葉を選ぶ。「数字として見るのは簡単だ。でも、数字には妹さんの名前が入ってる。忘れちゃいけないね」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_14_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_14_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_14_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_15",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_15_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_15_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_15_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "15階。宛先のない手紙と消された名簿を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_15_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_15_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_15_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_16",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_16_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_16_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_16_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "16階。宛先のない手紙と消された名簿を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_16_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_16_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_16_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_17",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_17_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_17_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_17_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "17階。宛先のない手紙と消された名簿を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_17_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_17_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_17_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_18",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_18_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_18_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_18_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "18階。宛先のない手紙と消された名簿を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_18_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_18_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_18_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_19",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_19_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_19_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_19_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "ミナ「帰ったら、妹に何を話そう」\nリナ「ガルドが階段で転びかけた話」\nガルド「そこは俺が皆を守った話だろう」\nテオ「両方書けば、正確な記録になるよ」",
+      "speaker": "仲間たち",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_19_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_20",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_20_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_20_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_20_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。宛先のない手紙と消された名簿のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_20_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第2章 届かなかった手紙",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_30",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_30",
+          "effect": ""
+        }
+      ],
+      "text": "三十階の守り手は、ガルドの名を呼んだ。「まだ、その盾を持っているのか」声は、かつての副隊長と同じだった。倒れた鎧の奥から、偽造された退却命令が見つかる。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "reveal_30",
+      "choices": [
+        {
+          "text": "仲間の気持ちを聞き、一緒に進む",
+          "next": null,
+          "effect": "compassion+2|honor+1"
+        },
+        {
+          "text": "分かったことを記録し、次の道を考える",
+          "next": null,
+          "effect": "cunning+2|morality+1"
+        },
+        {
+          "text": "必ず帰ると約束して、次へ進む",
+          "next": null,
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「俺が門を開けたんだ。村人を逃がすはずだった。向こうに待っていたのは、塔の使いだった」ガルドは盾を下ろした。「知らなかった、で済ませたくない。今度は、俺の目で道を選ぶ」",
+      "speaker": "仲間たち",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_21",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_21_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_21_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_21_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「命令を守るのは得意だった。自分で選ぶのは……まだ怖い」ガルドは先の扉を見る。「間違えたら止めてくれ。黙って従う仲間には、なりたくない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_21_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_21_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_21_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_22",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_22_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_22_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_22_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「ガルドのこと、許せない人もいると思う」ミナは静かに言う。「でも、罪を思い出すためだけに、ここへ来たんじゃない。まだ助けられる人がいる」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_22_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_22_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_22_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_23",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_23_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_23_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_23_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「あんたの盾、門みたいだね。閉めれば守れる。開ければ逃がせる」リナは盾を軽く叩く。「どっちが正しいか、毎回違う。だから一緒に考えるんでしょ」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_23_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_23_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_23_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_24",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_24_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_24_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_24_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「偽の命令には、学院の印がある。僕の父が勤めていた場所だ」テオは紙を畳む。「関係ないと言うのは簡単だ。調べる。僕にも、確かめる責任がある」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_24_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_24_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_24_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_25",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_25_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_25_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_25_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "25階。偽りの命令と、選び直す勇気を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_25_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_25_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_25_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_26",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_26_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_26_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_26_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "26階。偽りの命令と、選び直す勇気を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_26_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_26_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_26_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_27",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_27_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_27_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_27_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "27階。偽りの命令と、選び直す勇気を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_27_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_27_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_27_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_28",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_28_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_28_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_28_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "28階。偽りの命令と、選び直す勇気を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_28_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_28_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_28_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_29",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_29_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_29_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_29_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "ガルド「俺が先に扉を開ける」\nリナ「相談してからって言ったばかり！」\nガルド「……そうだった。右と左、どっちだ？」\nミナ「聞いてくれたことが、うれしいよ」",
+      "speaker": "仲間たち",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_29_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_30",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_30_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_30_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_30_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。偽りの命令と、選び直す勇気のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_30_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第3章 盾の向こう側",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_40",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_40",
+          "effect": ""
+        }
+      ],
+      "text": "四十階の壁に、リナの故郷の樹紋が浮かぶ。守護者が放った光の中に、燃えたはずの森が見えた。「この歌……母さんが、帰り道で歌ってた」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "reveal_40",
+      "choices": [
+        {
+          "text": "仲間の気持ちを聞き、一緒に進む",
+          "next": null,
+          "effect": "compassion+2|honor+1"
+        },
+        {
+          "text": "分かったことを記録し、次の道を考える",
+          "next": null,
+          "effect": "cunning+2|morality+1"
+        },
+        {
+          "text": "必ず帰ると約束して、次へ進む",
+          "next": null,
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "塔に封じられた森の記憶から、生き残った人々の姿が見えた。地上の谷に隠れて暮らしている。「全部なくなったわけじゃなかった」リナは目をこする。「帰る場所、まだ探していいんだ」",
+      "speaker": "仲間たち",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_31",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_31_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_31_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_31_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「森を焼いた命令にも、王都の印がある。俺の知らない戦いが、まだあるんだな」ガルドは弓弦を張るリナを見る。「知るのが怖くても、目をそらさない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_31_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_31_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_31_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_32",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_32_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_32_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_32_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「リナは、寂しい時ほどよく笑うんだね」ミナは水筒を渡す。「私の前では、うまい冗談を考えなくてもいいよ。黙って座ってても、隣にいるから」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_32_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_32_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_32_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_33",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_33_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_33_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_33_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「母さんに、外の世界を見たいって言って喧嘩した。最後の言葉が、それ」リナは葉を握る。「会えたら謝る。ついでに、外にもいい人がいたって教える」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_33_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_33_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_33_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_34",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_34_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_34_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_34_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「森の歌は、地図なんだ。旋律の高低が谷の形と一致する」テオは楽しそうに説明しかけ、声を落とす。「……ごめん。これは、リナの家族の歌だったね」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_34_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_34_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_34_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_35",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_35_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_35_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_35_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "35階。故郷の歌と、生き残った森の人々を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_35_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_35_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_35_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_36",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_36_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_36_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_36_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "36階。故郷の歌と、生き残った森の人々を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_36_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_36_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_36_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_37",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_37_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_37_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_37_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "37階。故郷の歌と、生き残った森の人々を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_37_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_37_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_37_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_38",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_38_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_38_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_38_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "38階。故郷の歌と、生き残った森の人々を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_38_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_38_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_38_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_39",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_39_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_39_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_39_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "リナ「森に帰ったら、木登りを教えてあげる」\nテオ「落下の危険について先に――」\nガルド「下で受け止める。登ってこい」\nミナ「私はお昼ごはんを用意するね」",
+      "speaker": "仲間たち",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_39_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_40",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_40_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_40_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_40_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。故郷の歌と、生き残った森の人々のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_40_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第4章 森が覚えていた歌",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_50",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_50",
+          "effect": ""
+        }
+      ],
+      "text": "五十階の装置には、テオの父の署名が刻まれていた。『星守計画――人の記憶を燃料として夜を支える』。テオは読めなくなったように、口を閉じる。",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "reveal_50",
+      "choices": [
+        {
+          "text": "仲間の気持ちを聞き、一緒に進む",
+          "next": null,
+          "effect": "compassion+2|honor+1"
+        },
+        {
+          "text": "分かったことを記録し、次の道を考える",
+          "next": null,
+          "effect": "cunning+2|morality+1"
+        },
+        {
+          "text": "必ず帰ると約束して、次へ進む",
+          "next": null,
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "世界を照らす星は、塔が人々から奪った記憶で灯っていた。「父は世界を救おうとした。でも、そのために誰かを忘れさせた」テオは杖を握る。「正しい計算が、正しい答えとは限らないんだ」",
+      "speaker": "仲間たち",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_41",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_41_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_41_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_41_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「世界を守るため、だそうだ。俺が聞かされていた言葉と同じだな」ガルドはテオの横に座る。「父親の代わりに謝るな。お前が今、何をするかを聞かせてくれ」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_41_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_41_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_41_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_42",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_42_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_42_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_42_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「星を見るのが好きだった。妹と、名前をつけて遊んだの」ミナは天井を見上げる。「あの明かりに誰かの悲しみが混ざっていても、救う方法まで嫌いになりたくない」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_42_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_42_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_42_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_43",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_43_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_43_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_43_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「星を消したら、地上の人も困る。だからって、人を燃やし続けるのも嫌」リナは息を吐く。「面倒な問題だね。簡単な答えに、飛びつかないでよ」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_43_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_43_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_43_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_44",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_44_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_44_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_44_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「僕も研究を手伝った。燃料の欄を疑わずに、効率を上げたんだ」テオは図面を見せる。「この式を壊せるのは、仕組みを知っている僕だ。逃げずに、書き直したい」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_44_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_44_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_44_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_45",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_45_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_45_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_45_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "45階。記憶を燃やす星守装置を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_45_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_45_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_45_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_46",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_46_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_46_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_46_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "46階。記憶を燃やす星守装置を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_46_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_46_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_46_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_47",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_47_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_47_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_47_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "47階。記憶を燃やす星守装置を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_47_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_47_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_47_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_48",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_48_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_48_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_48_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "48階。記憶を燃やす星守装置を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_48_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_48_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_48_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第5章 星の代償",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_49",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_49_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_49_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_49_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "テオ「答えが三つあって、どれにも欠点がある」\nリナ「じゃあ、四つ目を作ろう」\nガルド「時間は俺が稼ぐ」\nミナ「足りないものは、みんなで持ち寄ろう」",
+      "speaker": "仲間たち",
+      "chapter": "第5章 星の代償",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_49_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第5章 星の代償",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_50",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_50_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_50_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_50_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。記憶を燃やす星守装置のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第5章 星の代償",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_50_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第5章 星の代償",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_60",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_60",
+          "effect": ""
+        }
+      ],
+      "text": "六十階で、守護者は旅人と同じ声で語った。「ここで引き返せば、失ったものを返してやろう」勝利の後、ハルが姿を現す。「私は初代の星守だ。塔の底で、もうひとりの私が待っている」",
+      "speaker": "ハル（旅人）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "guide"
+    },
+    {
+      "id": "reveal_60",
+      "choices": [
+        {
+          "text": "仲間の気持ちを聞き、一緒に進む",
+          "next": null,
+          "effect": "compassion+2|honor+1"
+        },
+        {
+          "text": "分かったことを記録し、次の道を考える",
+          "next": null,
+          "effect": "cunning+2|morality+1"
+        },
+        {
+          "text": "必ず帰ると約束して、次へ進む",
+          "next": null,
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "ハルは自分の優しさを切り離し、塔の外へ送り出していた。本体は記憶を守るため、奪い続ける怪物となった。「私を倒すだけでは星は消える。君たちが、別の仕組みを選ばなければならない」",
+      "speaker": "仲間たち",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "guide"
+    },
+    {
+      "id": "explore_51",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_51_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_51_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_51_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「都合のいい話ばかりする奴は信用しない。ハルも、俺もな」ガルドは剣を収める。「でも、今から本当のことを話すなら聞く。間違ったまま終わる必要はない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_51_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_51_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_51_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_52",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_52_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_52_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_52_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「ハルさんを憎めば、楽になるのかな」ミナは首を振る。「奪ったものは返してほしい。でも、傷つけるだけでは、妹の記憶は戻らない」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_52_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_52_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_52_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_53",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_53_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_53_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_53_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「引き返せば森を返す、だって。ちょっと揺れた」リナは正直に笑う。「でも、あんたたちと歩いたことまで消されるなら、安い取引じゃないね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_53_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_53_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_53_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_54",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_54_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_54_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_54_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「胸の欠片は、装置の鍵だった。君のお母さんが持ち出した安全装置だ」テオは欠片を見つめる。「だから、君ひとりを燃料にすれば修復できる……そんな設計、僕は認めない」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_54_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_54_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_54_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_55",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_55_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_55_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_55_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "55階。星守ハルと、差し出された取引を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_55_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_55_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_55_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_56",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_56_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_56_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_56_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "56階。星守ハルと、差し出された取引を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_56_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_56_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_56_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_57",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_57_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_57_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_57_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "57階。星守ハルと、差し出された取引を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_57_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_57_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_57_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_58",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_58_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_58_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_58_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "58階。星守ハルと、差し出された取引を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_58_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_58_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_58_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_59",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_59_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_59_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_59_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "ハル「ひとりで背負う方が、決めるのは簡単だった」\nミナ「簡単でも、寂しかったでしょう」\nガルド「次は相談しろ」\nリナ「約束を破ったら、私が追いかけるから」",
+      "speaker": "仲間たち",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_59_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_60",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_60_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_60_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_60_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。星守ハルと、差し出された取引のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_60_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第6章 旅人ハルの正体",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_70",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_70",
+          "effect": ""
+        }
+      ],
+      "text": "七十階の守護者を倒すと、壁から無数の声が戻った。ミナは妹の名前を呼ぶ。返事は短い歌だった。「生きてる。谷で、お姉ちゃんを待ってる」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "reveal_70",
+      "choices": [
+        {
+          "text": "仲間の気持ちを聞き、一緒に進む",
+          "next": null,
+          "effect": "compassion+2|honor+1"
+        },
+        {
+          "text": "分かったことを記録し、次の道を考える",
+          "next": null,
+          "effect": "cunning+2|morality+1"
+        },
+        {
+          "text": "必ず帰ると約束して、次へ進む",
+          "next": null,
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "奪われた名前を口にすると、封じられた記憶が地上へ返る。五人は名簿を分けて読み始めた。君の母の名もあった。欠片から、あの日の声が戻る。『ひとりで世界を背負わないで』",
+      "speaker": "仲間たち",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_61",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_61_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_61_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_61_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「名札を見つけた子の名前、覚えてるか」ガルドはゆっくり呼ぶ。「俺が覚えている限り、あの村は消えていない。帰ったら、皆の名前を門に刻みたい」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_61_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_61_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_61_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_62",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_62_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_62_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_62_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「妹は私を忘れていなかった。私だけが、忘れかけてたんだね」ミナは手帳を閉じる。「もう手帳はいらない、とは言わないよ。大切だから、何度でも書く」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_62_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_62_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_62_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_63",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_63_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_63_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_63_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「名前を呼ぶだけで帰れるなら、何度だって呼ぶよ」リナは母の名を口にする。「……あんたの名前も、私の歌に入れていい？」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_63_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_63_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_63_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_64",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_64_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_64_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_64_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「記憶をひとりに集中させるから壊れる。名前を呼ぶ人が増えれば、負担を分けられる」テオの声に熱が戻る。「君のお母さんは、もう答えを知っていたのかもしれない」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_64_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_64_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_64_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_65",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_65_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_65_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_65_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "65階。戻ってきた名前と母の言葉を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_65_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_65_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_65_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_66",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_66_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_66_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_66_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "66階。戻ってきた名前と母の言葉を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_66_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_66_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_66_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_67",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_67_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_67_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_67_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "67階。戻ってきた名前と母の言葉を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_67_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_67_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_67_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_68",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_68_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_68_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_68_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "68階。戻ってきた名前と母の言葉を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_68_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_68_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_68_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第7章 名前を返す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_69",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_69_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_69_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_69_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "ミナ「みんなの名前、最初から言ってみよう」\nガルド「点呼か？ ガルド、いるぞ」\nリナ「リナ。ちゃんと聞いてる」\nテオ「テオ。そして、君。これで五人だね」",
+      "speaker": "仲間たち",
+      "chapter": "第7章 名前を返す",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_69_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第7章 名前を返す",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_70",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_70_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_70_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_70_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。戻ってきた名前と母の言葉のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第7章 名前を返す",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_70_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第7章 名前を返す",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_80",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_80",
+          "effect": ""
+        }
+      ],
+      "text": "八十階の装置が、君だけを鍵として引き寄せる。ガルドが腕をつかみ、リナが鎖を射抜く。ミナとテオが光を押し返した。「勝手にひとりで、決めるなよ」",
+      "speaker": "仲間たち",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "player"
+    },
+    {
+      "id": "reveal_80",
+      "choices": [
+        {
+          "text": "仲間の気持ちを聞き、一緒に進む",
+          "next": null,
+          "effect": "compassion+2|honor+1"
+        },
+        {
+          "text": "分かったことを記録し、次の道を考える",
+          "next": null,
+          "effect": "cunning+2|morality+1"
+        },
+        {
+          "text": "必ず帰ると約束して、次へ進む",
+          "next": null,
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "テオは鍵を五つの光に分けた。「一度に世界を救うことはできない。でも、五人で記憶を運べば、少しずつ返せる」ミナが頷く。「遠回りでも、一緒に帰れる道を選びたい」",
+      "speaker": "仲間たち",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_71",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_71_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_71_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_71_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「昔の俺なら、ひとりで残ると言った。格好よく終われるからな」ガルドは君の肩を叩く。「今は帰りたい。五人で。そのためなら、格好悪くても助けを呼ぶ」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_71_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_71_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_71_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_72",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_72_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_72_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_72_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「助ける側は、助けられちゃいけない気がしてた」ミナは手を差し出す。「疲れたから、少しだけ握ってて。……こうして頼ってもいいんだね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_72_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_72_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_72_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_73",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_73_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_73_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_73_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「足が震えてる？ 私もだよ」リナは弓を持つ手を見せる。「怖くないふりは、もうやめた。怖いままでも、隣にあんたがいれば進める」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_73_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_73_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_73_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_74",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_74_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_74_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_74_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「五人に分けた鍵は、ひとりでも欠けると不安定になる」テオは小さく笑う。「欠点と言えば欠点だ。でも、置いていかない理由が式になった。僕は、これが好きだ」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_74_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_74_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_74_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_75",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_75_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_75_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_75_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "75階。五人に分けた鍵と、助けを求める勇気を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_75_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_75_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_75_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_76",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_76_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_76_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_76_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "76階。五人に分けた鍵と、助けを求める勇気を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_76_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_76_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_76_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_77",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_77_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_77_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_77_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "77階。五人に分けた鍵と、助けを求める勇気を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_77_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_77_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_77_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_78",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_78_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_78_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_78_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "78階。五人に分けた鍵と、助けを求める勇気を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_78_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_78_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_78_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_79",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_79_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_79_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_79_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "ガルド「休憩だ。反対意見は？」\nテオ「賛成。計算が追いついてない」\nリナ「賛成。お腹が先に反対してる」\nミナ「全員一致だね。あなたも、座って」",
+      "speaker": "仲間たち",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_79_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_80",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_80_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_80_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_80_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。五人に分けた鍵と、助けを求める勇気のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_80_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第8章 五人分の灯り",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_90",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_90",
+          "effect": ""
+        }
+      ],
+      "text": "九十階の扉の向こうで、深淵王が待っている。ハルは最後の地図を置いた。「どの道にも代償がある。誰かに決めさせてはいけない。君たち自身の明日を選んでほしい」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "reveal_90",
+      "choices": [
+        {
+          "text": "仲間の気持ちを聞き、一緒に進む",
+          "next": null,
+          "effect": "compassion+2|honor+1"
+        },
+        {
+          "text": "分かったことを記録し、次の道を考える",
+          "next": null,
+          "effect": "cunning+2|morality+1"
+        },
+        {
+          "text": "必ず帰ると約束して、次へ進む",
+          "next": null,
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "世界へ少しずつ記憶を返す道。ひとりが星守を引き受ける道。塔を止め、人の手で夜を越える道。五人は違う答えを持っていた。それでも、選んだ後を一緒に支えると約束した。",
+      "speaker": "仲間たち",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_81",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_81_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_81_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_81_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「帰ったら、村の門を直す。次は命令じゃなく、皆に頼まれて立つ」ガルドは君を見る。「その時、盾の傷の話を聞きに来い。今度は、最後まで話せる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_81_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_81_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_81_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_82",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_82_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_82_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_82_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「妹と朝ごはんを食べたい。それが私の、大きな願い」ミナは笑う。「世界を救う理由って、そんな小さなことでいいんだと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_82_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_82_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_82_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_83",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_83_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_83_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_83_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「森の谷まで案内する。迷ったら、私の歌を聞いて」リナは君の額を軽くつつく。「約束したからね。勝手に伝説になって、会えなくなるのは禁止」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_83_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_83_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_83_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_84",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_84_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_84_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_84_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「父の式は、消さずに残すよ。間違いを隠したら、誰かが繰り返す」テオは新しい頁を開く。「その隣に、僕たちの式を書く。次の旅人が、選べるように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_84_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_84_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_84_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_85",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_85_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_85_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_85_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "85階。帰った後の約束と、三つの選択を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_85_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_85_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_85_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_86",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_86_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_86_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_86_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "86階。帰った後の約束と、三つの選択を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_86_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_86_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_86_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_87",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_87_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_87_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_87_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "87階。帰った後の約束と、三つの選択を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_87_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_87_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_87_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_88",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_88_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_88_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_88_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "88階。帰った後の約束と、三つの選択を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_88_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_88_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_88_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第9章 明日の約束",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_89",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_89_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_89_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_89_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "リナ「全部終わったら、最初の宿で集合ね」\nミナ「手紙も書こう」\nガルド「俺は文章が苦手だ。顔を見せに行く」\nテオ「それがいちばん確実だね」",
+      "speaker": "仲間たち",
+      "chapter": "第9章 明日の約束",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_89_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第9章 明日の約束",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_90",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_90_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_90_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_90_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。帰った後の約束と、三つの選択のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第9章 明日の約束",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_90_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第9章 明日の約束",
+      "portrait": "player"
+    },
+    {
+      "id": "post_boss_100",
+      "choices": [
+        {
+          "text": "その言葉の続きを聞く",
+          "next": "reveal_100",
+          "effect": ""
+        }
+      ],
+      "text": "百階。アビスの鎧が砕け、中から年老いたハルが現れた。「世界を失うのが怖かった。誰かを忘れさせれば、朝が来ると思った」その手には、最初に奪った人の名札が握られていた。",
+      "speaker": "深淵王アビス",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "boss_final"
+    },
+    {
+      "id": "reveal_100",
+      "choices": [
+        {
+          "text": "五人で記憶を分け合い、少しずつ世界へ返す",
+          "next": "ending_restore_scene",
+          "effect": "compassion+5|honor+3|story_flag=ending_restore"
+        },
+        {
+          "text": "星守を引き受け、地上の朝を守る",
+          "next": "ending_guardian_scene",
+          "effect": "bravery+5|honor+4|story_flag=ending_guardian"
+        },
+        {
+          "text": "塔を止め、人の手で夜を越える道を選ぶ",
+          "next": "ending_freedom_scene",
+          "effect": "cunning+4|morality+3|story_flag=ending_freedom"
+        }
+      ],
+      "text": "「私を正しいことにしなくていい」ハルは五つの鍵に触れる。「ただ、私が間違えたことを覚えていてほしい。君たちは、どんな朝を選ぶ？」仲間たちは君の隣に並ぶ。誰も、答えを急がせなかった。",
+      "speaker": "ハル（星守）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "guide"
+    },
+    {
+      "id": "explore_91",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_91_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_91_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_91_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「最後の敵が人なら、斬りづらくなるか？ なるさ」ガルドは頷く。「それでいい。斬るかどうか考えられる人間のまま、ここまで来たんだから」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_91_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_91_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_91_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_92",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_92_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_92_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_92_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「ハルさんが奪った人の名前も、返してあげたい」ミナは手帳を開く。「許すかどうかは、その人たちが決めること。私たちは、声を届けよう」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_92_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_92_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_92_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_93",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_93_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_93_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_93_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「ここまで来たら、格好いい言葉が浮かぶと思ってた」リナは笑う。「でも、言いたいのはひとつ。帰ろう。途中で喧嘩しても、五人で帰ろう」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_93_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_93_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_93_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_94",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_94_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_94_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_94_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "「完璧な結末は、計算できなかった」テオは杖を持ち直す。「だから何も選ばない、とは言わない。選んだ後で直せる余地を、残しておこう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_94_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_94_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_94_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_95",
+      "choices": [
+        {
+          "text": "話してくれてありがとう。一緒に背負おう",
+          "next": "explore_95_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_gald"
+        },
+        {
+          "text": "何があったのか、もう少し聞かせて",
+          "next": "explore_95_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "これから何をするかを、一緒に考えよう",
+          "next": "explore_95_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "95階。アビスの告白と、選び直す朝を手がかりに、五人は奥へ進む。ガルドは先へ出かけた足を止め、皆の位置を確かめた。「先頭だけが前を向いていても駄目だな。今日はお前の歩幅に合わせる」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_95_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「……ありがとう。盾だけ持ってりゃいいと思ってたが、荷物を分けてもいいんだな」ガルドは肩の力を抜く。「お前も抱え込みそうになったら、俺に言え」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_95_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「うまく話せないかもしれん。それでも、最後まで聞いてくれ」ガルドは剣を鞘に戻した。戦う時より慎重に、次の言葉を選ぶ。",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_95_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「そうだな。後悔だけじゃ、人は守れない」ガルドは頷く。「まずは目の前の扉だ。次は、何も確かめずに開けたりしない」",
+      "speaker": "ガルド（戦士）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_warrior"
+    },
+    {
+      "id": "explore_96",
+      "choices": [
+        {
+          "text": "無理に笑わなくていい。隣にいるよ",
+          "next": "explore_96_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_mina"
+        },
+        {
+          "text": "君が覚えていることを、聞かせてほしい",
+          "next": "explore_96_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰ったら、まず何をしたい？",
+          "next": "explore_96_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "96階。アビスの告白と、選び直す朝を手がかりに、五人は奥へ進む。ミナが歩く速さを落とした。「遠くの声ばかり探して、隣の人の声を聞き逃したくないな。あなた、今は大丈夫？」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_96_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「ありがとう。安心したら、少し泣きそう」ミナは手帳を胸に抱いた。「あなたが疲れた時も、同じ言葉を返したい。忘れないように、覚えておくね」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_96_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「小さなことばかりだよ。好きなパンの匂いとか、眠る前の声とか」ミナは笑う。「でも、小さいから消していい記憶なんて、ないと思う」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_96_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「誰かのため、だけじゃなくていいの？」ミナは少し考えた。「それなら、皆とゆっくり食事をしたい。帰ったら、私の好きな料理も作っていいかな」",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "explore_97",
+      "choices": [
+        {
+          "text": "冗談のあとに隠した本音も、聞きたい",
+          "next": "explore_97_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_rina"
+        },
+        {
+          "text": "君なら、どんな道を選ぶ？",
+          "next": "explore_97_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "帰り道の案内も、君に頼みたい",
+          "next": "explore_97_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "97階。アビスの告白と、選び直す朝を手がかりに、五人は奥へ進む。リナは角を曲がる前に、振り返って手を振った。「ついてきてる？ 数えるよ。ひとり、ふたり……よし、五人。少しでも減ったら、引き返すから」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_97_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「見抜かれたか。気まずいなあ」リナは笑い、それから少し黙った。「でも、ちゃんと聞く人がいるなら、もう少し話してもいいかな」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_97_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「安全な道だけ探すわけじゃないよ。戻れる道を覚えておくの」リナは床に印をつける。「前へ進むのと、帰れなくなるのは別だからね」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_97_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「それ、約束だからね」リナが指を差し出した。「迷ったら歌うよ。格好悪くてもいいから、聞こえたら返事して。ちゃんと迎えに行く」",
+      "speaker": "リナ（弓使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_archer"
+    },
+    {
+      "id": "explore_98",
+      "choices": [
+        {
+          "text": "答えが出なくても、君と考えたい",
+          "next": "explore_98_warm",
+          "effect": "compassion+2|honor+1|story_flag=bond_theo"
+        },
+        {
+          "text": "その考えを、僕にも分かるように教えて",
+          "next": "explore_98_ask",
+          "effect": "cunning+2|compassion+1"
+        },
+        {
+          "text": "間違いがあったら、一緒に直していこう",
+          "next": "explore_98_resolve",
+          "effect": "bravery+2|honor+1"
+        }
+      ],
+      "text": "98階。アビスの告白と、選び直す朝を手がかりに、五人は奥へ進む。テオが図面を閉じた。「計算している間、皆の顔を見ていなかった。今は記録を休むよ。見落としたくないものが、紙の外にもあるから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_98_warm",
+      "choices": [
+        {
+          "text": "その言葉を覚えて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「答えを急がなくても、隣にいてくれるんだね」テオは眼鏡を外した。「じゃあ、分からないところから話すよ。格好悪いけど、本当のことだから」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_98_ask",
+      "choices": [
+        {
+          "text": "話を聞き、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「いいよ。難しい言葉でごまかすのは、説明できていない証拠だ」テオは紙に五つの点を描く。「まず、僕たち五人から考えてみよう」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_98_resolve",
+      "choices": [
+        {
+          "text": "うなずいて、歩き出す",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "「間違いを消すより、直した跡を残そう」テオは図面に新しい線を引く。「後から来る人が、同じ場所で立ち止まらずに済むように」",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "ally_mage"
+    },
+    {
+      "id": "explore_99",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_99_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_99_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_99_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "ガルド「準備はいいか」\nリナ「最初の階でも聞いたね」\nミナ「あの時より、ちゃんと答えられるよ」\nテオ「準備万端じゃない。でも、一緒に行ける」",
+      "speaker": "仲間たち",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_99_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_100",
+      "choices": [
+        {
+          "text": "五人で帰る約束を、もう一度確かめる",
+          "next": "explore_100_reply",
+          "effect": "compassion+2|honor+2"
+        },
+        {
+          "text": "怖さも話して、気持ちを分け合う",
+          "next": "explore_100_reply",
+          "effect": "compassion+3|morality+1"
+        },
+        {
+          "text": "帰った後の楽しみを決める",
+          "next": "explore_100_reply",
+          "effect": "bravery+2|cunning+1"
+        }
+      ],
+      "text": "次の扉の前で、五人は足を止めた。アビスの告白と、選び直す朝のことが、胸に残っている。\nガルド「盾は俺が持つ。気持ちまで隠す必要はないぞ」\nミナ「言っておきたいことがあれば、今、聞かせて」",
+      "speaker": "仲間たち",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "player"
+    },
+    {
+      "id": "explore_100_reply",
+      "choices": [
+        {
+          "text": "皆と進む",
+          "next": null,
+          "effect": ""
+        }
+      ],
+      "text": "リナ「よし。帰り道までが冒険だからね」ガルドが頷き、ミナは手帳に小さな印をつけた。テオが皆の顔を見て笑う。五人の足音が、今度は同じ速さで重なった。",
+      "speaker": "仲間たち",
+      "chapter": "第10章 星を選び直す",
+      "portrait": "player"
+    },
+    {
+      "id": "ending_restore_scene",
+      "choices": [
+        {
+          "text": "「ただいま」と答えて、五人で地上へ帰る",
+          "next": "__ENDING__",
+          "effect": ""
+        }
+      ],
+      "text": "五つの鍵が、記憶を少しずつ地上へ運ぶ。ミナの妹から届く歌に、リナが故郷の旋律を重ねた。ガルドは名札を胸にしまい、テオは新しい式を書き留める。欠片から母の声がする。『おかえり』。君は、四人を振り返った。",
+      "speaker": "仲間たち",
+      "chapter": "終章 帰る名前",
+      "portrait": "player"
+    },
+    {
+      "id": "ending_guardian_scene",
+      "choices": [
+        {
+          "text": "再会を約束し、世界の朝を迎える",
+          "next": "__ENDING__",
+          "effect": ""
+        }
+      ],
+      "text": "君は星守の席につく。ガルドは盾を、リナは帰り道の歌を、テオは修復の図面を残した。ミナは五人の名前を書いた手帳を開く。「忘れないよ。助けを呼ぶ時は、私たちの名前を呼んで」塔の窓に、四つの小さな灯りが帰っていく。",
+      "speaker": "ミナ（僧侶）",
+      "chapter": "終章 消えない約束",
+      "portrait": "ally_priest"
+    },
+    {
+      "id": "ending_freedom_scene",
+      "choices": [
+        {
+          "text": "小さな灯りを持ち、五人で新しい道を歩く",
+          "next": "__ENDING__",
+          "effect": ""
+        }
+      ],
+      "text": "塔の星が消え、地上に長い夜が訪れた。けれど、人々は互いの名前を呼び、窓に灯りをともす。ガルドは道を守り、ミナは人々を迎え、リナは谷への道を歌い、テオは奪わずに灯す魔法を教えた。君の母の名は、村の人々の口に戻っていた。",
+      "speaker": "テオ（魔法使い）",
+      "chapter": "終章 人の灯り",
+      "portrait": "ally_mage"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "weapon": {
+    "木の剣": {"attack": 2, "price": 0, "desc": "初期装備"},
+    "鉄の剣": {"attack": 8, "price": 100, "desc": "基本的な剣"},
+    "大剣": {"attack": 15, "price": 300, "desc": "両手で扱う大型剣"},
+    "魔法の剣": {"attack": 12, "mp_boost": 5, "price": 400, "desc": "MP+5"},
+    "ドラゴンスレイヤー": {"attack": 25, "price": 1000, "desc": "伝説の剣"}
+  },
+  "armor": {
+    "布の服": {"defense": 0, "price": 0, "desc": "初期装備"},
+    "皮の鎧": {"defense": 3, "price": 80, "desc": "基本的な防具"},
+    "鉄甲冑": {"defense": 8, "price": 250, "desc": "堅い鉄製"},
+    "魔法の衣": {"defense": 5, "max_mp": 10, "price": 300, "desc": "MP+10"},
+    "竜騎士の鎧": {"defense": 15, "max_hp": 30, "price": 800, "desc": "HP+30"}
+  },
+  "accessory": {
+    "石のお守り": {"hp_boost": 10, "price": 50, "desc": "HP+10"},
+    "力の指輪": {"attack_boost": 3, "price": 100, "desc": "攻撃+3"},
+    "魔力の宝石": {"mp_boost": 15, "price": 150, "desc": "MP+15"},
+    "不死鳥の羽": {"max_hp": 50, "max_mp": 20, "price": 500, "desc": "HP+50 MP+20"},
+    "勇者の証": {"attack_boost": 5, "defense_boost": 5, "price": 600, "desc": "攻撃防御+5"}
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "スライム": {
+    "hp": 38, "attack": 8, "defense": 0, "exp": 14, "skill": "none",
+    "color": [100, 255, 100], "desc": "最弱の敵だが油断するとやられる", "image": "assets/enemy_1.png"
+  },
+  "ゴブリン": {
+    "hp": 56, "attack": 13, "defense": 2, "exp": 30, "skill": "none",
+    "color": [150, 200, 100], "desc": "小柄でもナイフが鋭い", "image": "assets/enemy_2.png"
+  },
+  "オーク": {
+    "hp": 92, "attack": 22, "defense": 5, "exp": 60, "skill": "powerattack",
+    "color": [180, 100, 80], "desc": "重い棍棒の一撃に注意", "image": "assets/enemy_3.png"
+  },
+  "ウルフ": {
+    "hp": 62, "attack": 20, "defense": 3, "exp": 48, "skill": "doublehit",
+    "color": [120, 80, 100], "desc": "素早い二段噛みつき", "image": "assets/enemy_4.png"
+  },
+  "スケルトン": {
+    "hp": 76, "attack": 18, "defense": 4, "exp": 54, "skill": "bonecurse",
+    "color": [200, 200, 150], "desc": "呪いを纏う骨の戦士", "image": "assets/enemy_5.png"
+  },
+  "バット": {
+    "hp": 42, "attack": 15, "defense": 1, "exp": 24, "skill": "sonic",
+    "color": [100, 50, 100], "desc": "残像のような高速攻撃", "image": "assets/enemy.png"
+  },
+  "ゴーレム": {
+    "hp": 130, "attack": 16, "defense": 10, "exp": 84, "skill": "none",
+    "color": [150, 150, 150], "desc": "硬い岩の体・物理が通りにくい", "image": "assets/enemy.png"
+  },
+  "ドラゴン": {
+    "hp": 230, "attack": 34, "defense": 8, "exp": 180, "skill": "firebreath", "rare": true,
+    "color": [200, 50, 50], "desc": "灼熱の息吹を吐く", "image": "assets/enemy.png"
+  },
+  "グール": {
+    "hp": 70, "attack": 19, "defense": 2, "exp": 44, "skill": "poison",
+    "color": [100, 150, 80], "desc": "毒を持つ死体・噛まれると蝕まれる", "image": "assets/enemy.png"
+  },
+  "ナイト": {
+    "hp": 110, "attack": 24, "defense": 8, "exp": 96, "skill": "shield",
+    "color": [100, 150, 200], "desc": "重装の騎士・守りが固い", "image": "assets/enemy.png"
+  },
+  "ウィッチ": {
+    "hp": 62, "attack": 11, "defense": 1, "exp": 66, "skill": "frostbolt", "rare": true,
+    "color": [150, 100, 200], "desc": "氷弾を放つ魔女", "image": "assets/enemy.png"
+  },
+  "ミミック": {
+    "hp": 60, "attack": 18, "defense": 3, "exp": 72, "skill": "disguise", "rare": true,
+    "color": [180, 140, 80], "desc": "宝箱に擬態する強敵", "image": "assets/enemy.png"
+  },
+  "草原バッタ": {
+    "hp": 34, "attack": 10, "defense": 0, "exp": 13, "skill": "none",
+    "color": [120, 180, 90], "desc": "跳ねるたび死角に回り込む", "image": "assets/enemy.png"
+  },
+  "ミツバチ": {
+    "hp": 30, "attack": 12, "defense": 0, "exp": 14, "skill": "none",
+    "color": [240, 220, 80], "desc": "刺すと毒を撒く小型の蜂", "image": "assets/enemy.png"
+  },
+  "クラゲ": {
+    "hp": 40, "attack": 11, "defense": 0, "exp": 16, "skill": "none",
+    "color": [160, 210, 255], "desc": "電撃を帯びた水母", "image": "assets/enemy.png"
+  },
+  "ピラニア": {
+    "hp": 50, "attack": 15, "defense": 1, "exp": 22, "skill": "none",
+    "color": [200, 120, 100], "desc": "群れで襲いかかる魚", "image": "assets/enemy.png"
+  },
+  "砂ワーム": {
+    "hp": 64, "attack": 17, "defense": 2, "exp": 28, "skill": "none",
+    "color": [190, 160, 110], "desc": "砂中から飛び出して噛みつく", "image": "assets/enemy.png"
+  },
+  "コウモリ": {
+    "hp": 44, "attack": 17, "defense": 1, "exp": 26, "skill": "sonic",
+    "color": [90, 70, 110], "desc": "高音で混乱させる洞窟の蝙蝠", "image": "assets/enemy.png"
+  }
+}
