@@ -45,11 +45,11 @@ namespace TowerAdventure
             if (Input.GetKeyDown(KeyCode.P)) { settingsOpen = !settingsOpen; journalOpen = combosOpen = bagOpen = slotsOpen = false; pointerDirection = Vector2.zero; }
             if (state != null && menu == "" && !Modal && state.mode != "over" && state.mode != "clear") state.playSeconds += Mathf.Min(Time.unscaledDeltaTime, .25f);
             if (Input.GetKeyDown(KeyCode.F11)) Screen.fullScreen = !Screen.fullScreen;
-            if (Input.GetKeyDown(KeyCode.Escape)) { journalOpen = combosOpen = bagOpen = slotsOpen = settingsOpen = false; pointerDirection = Vector2.zero; }
+            if (Input.GetKeyDown(KeyCode.Escape)) { Application.Quit(); return; }
             if (state == null) return;
             if (Input.GetKeyDown(KeyCode.F5)) Save();
             if (Input.GetKeyDown(KeyCode.F9)) Load();
-            if (Input.GetKeyDown(KeyCode.Escape)) { journalOpen = combosOpen = bagOpen = slotsOpen = false; pointerDirection = Vector2.zero; }
+
             if (Input.GetKeyDown(KeyCode.B) && !settingsOpen && state.mode != "over" && state.mode != "clear") { if (bagOpen) bagOpen = false; else OpenBag(); }
             if (Input.GetKeyDown(KeyCode.J) && !settingsOpen) { journalOpen = !journalOpen; combosOpen = bagOpen = slotsOpen = false; pointerDirection = Vector2.zero; }
             if (menu != "" || Modal || EffectsBusy) return;
@@ -266,6 +266,8 @@ namespace TowerAdventure
         }
     }
 }
+
+
 
 
 

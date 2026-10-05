@@ -44,7 +44,7 @@ namespace TowerAdventure
         void DrawSettings()
         {
             Panel(new Rect(250, 200, 1100, 700)); Text(286, 223, 850, 44, "設定 / 一時停止", headingStyle);
-            if (Action(new Rect(1120, 224, 190, 40), "閉じる [P / Esc]")) settingsOpen = false;
+            if (Action(new Rect(1120, 224, 190, 40), "閉じる [P]")) settingsOpen = false;
             int current = state == null || menu == "title" ? newDifficulty : state.difficulty;
             Text(286, 291, 970, 36, "難易度（物語・報酬は共通。次の戦闘から反映）");
             bool canChange = state == null || menu == "title" || state.mode != "battle" && state.mode != "over" && state.mode != "clear";
@@ -68,3 +68,4 @@ namespace TowerAdventure
         }
     }
 }
+

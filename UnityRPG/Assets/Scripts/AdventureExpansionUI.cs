@@ -40,7 +40,7 @@ namespace TowerAdventure
         void DrawSlots()
         {
             Panel(new Rect(210, 260, 1180, 636)); Text(240, 277, 900, 45, "冒険の保存 / 手動3枠＋自動保存", headingStyle);
-            if (Action(new Rect(1160, 280, 200, 40), "閉じる [Esc]")) slotsOpen = false;
+            if (Action(new Rect(1160, 280, 200, 40), "閉じる")) slotsOpen = false;
             for (int i = 0; i < 4; i++)
             {
                 float y = 342 + i * 117; Panel(new Rect(239, y, 1121, 103), activeSlot == i);
@@ -58,7 +58,7 @@ namespace TowerAdventure
         void DrawBag()
         {
             Panel(new Rect(220, 270, 1160, 626)); Text(250, 286, 770, 45, "どうぐ・装備  /  " + state.gold + "G", headingStyle);
-            if (Action(new Rect(1150, 287, 200, 40), "閉じる [Esc]")) bagOpen = false;
+            if (Action(new Rect(1150, 287, 200, 40), "閉じる")) bagOpen = false;
             string[] tabs = { "どうぐ", "装備", "店", "工房（51階～）" };
             for (int i = 0; i < tabs.Length; i++) if (Action(new Rect(250 + i * 280, 350, 264, 41), tabs[i], i < 2 || state.mode == "town", bagTab == i)) bagTab = i;
             if (bagTab == 3) { DrawWorkshop(); return; }
@@ -98,5 +98,6 @@ namespace TowerAdventure
         }
     }
 }
+
 
 
